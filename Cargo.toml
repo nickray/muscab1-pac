@@ -1,0 +1,21 @@
+[package]
+version = "0.0.1"
+authors = [
+  "nickray <n@stalder.io>",
+]
+description = "Peripheral access API for ARM Musca B1 microcontroller"
+documentation = "https://docs.rs/muscab1-pac"
+keywords = ["no-std", "cortex-m", "arm", "musca", "svd2rust"]
+license = "MIT OR Apache-2.0"
+name = "muscab1-pac"
+repository = "https://github.com/nickray/muscab1-pac"
+edition = "2018"
+
+[dependencies]
+bare-metal = "0.2.4"
+vcell = "0.1"
+cortex-m = ">= 0.5.8, < 0.7"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.8"
